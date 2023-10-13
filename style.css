@@ -85,6 +85,10 @@
 .my-card {
     width: 180px;
     box-sizing: border-box;
+     display: inline-block !important;
+    border-radius: 15px !important;
+    white-space: wrap;
+    margin-inline: 10px;
 }
 
 .time-taken {
@@ -125,6 +129,9 @@
     text-transform: uppercase;
     font-weight: 700;
 }
+.product-btn:hover{
+    background-color: blueviolet;
+}
 
 .my-category-div {
     margin-top: 20px;
@@ -135,7 +142,7 @@
     justify-content: space-between;
 }
 
-.footer {
+.my-footer {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -179,11 +186,16 @@
     background-color: #213b50;
     margin-inline: 5px;
 }
-
+.row-2-col-2>button:hover{
+    background-color: palevioletred;
+}
 .row-2-col-3 {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.row-2-col-3>a:hover{
+    background-color: wheat;
 }
 
 .row-2-col-3>a {
@@ -205,16 +217,19 @@
 }
 
 td {
-    padding: 3gpx 20px;
+    padding: 3px 20px;
     color: #666666;
     font-size: 16px;
     line-height: 40px;
-    text-align: center;
+    text-align: left;
     cursor: pointer;
+}
+td:hover{
+    color: red;
 }
 
 .table-1 {
-    flex: 2;
+    flex: 1;
 }
 
 .table-2 {
